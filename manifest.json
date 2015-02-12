@@ -1,0 +1,47 @@
+{
+  "name": "Tutorial",
+  "description": "Get user interaction with current web page",
+  "version": "2.0",
+  "permissions": [
+    {
+      "socket": [
+        "tcp-connect:*:*",
+        "tcp-listen::*",
+        "udp-send-to::*"
+      ]
+    },
+    "http://localhost:8080/*",
+    "<all_urls>"
+  ],
+  "externally_connectable": {
+    "matches": [
+      "http://localhost:8080/*",
+      "http://openflix.rutapirata.com/*"
+    ]
+  },
+  "app": {
+    "background": {
+      "scripts": [
+        "lib/digest.js",
+        "lib/base64.js",
+        "src/socket.js",
+        "src/bufferlist.js",
+        "src/arrayeq.js",
+        "src/benc.js",
+        "src/mime.js",
+        "src/rate.js",
+        "src/shaper.js",
+        "src/torrent.js",
+        "src/tracker.js",
+        "src/peer.js",
+        "src/store-backend.js",
+        "src/store.js",
+        "src/http-server.js",
+        "src/http-stream.js",
+        "src/background.js"
+      ],
+      "persistent": false
+    }
+  },
+  "manifest_version": 2
+}

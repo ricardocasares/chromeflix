@@ -1,2 +1,0 @@
-# chromeflix
-Chrome torrent streamer
