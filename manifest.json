@@ -11,7 +11,7 @@
       ]
     },
     "http://localhost:8080/*",
-    "<all_urls>"
+    "http://openflix.rutapirata.com/*"
   ],
   "externally_connectable": {
     "matches": [
