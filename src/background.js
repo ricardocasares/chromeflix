@@ -18,7 +18,8 @@ var requestHandler = function(req) {
 
 function downloadTorrent(req) {
 	var xhr = new XMLHttpRequest();
-	xhr.open('GET', req.torrent);
+	var proxy = 'https://cors-anywhere.herokuapp.com/';
+	xhr.open('GET', proxy + req.torrent);
  	xhr.responseType = 'arraybuffer';
  	xhr.onload = function(e) {
 		if (this.status == 200) {
