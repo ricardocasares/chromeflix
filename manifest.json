@@ -34,6 +34,7 @@
         "src/torrent.js",
         "src/tracker.js",
         "src/peer.js",
+        "src/session-handler.js",
         "src/store-backend.js",
         "src/store.js",
         "src/http-server.js",
