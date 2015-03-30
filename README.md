@@ -67,3 +67,8 @@ function start(req) {
     });
 }
 ````
+
+## Status
+Actually some changes have happened here but evolution is slow...
+
+I haven't yet fully understood all of the code that astro did on this and I haven't work before on Chrome extensions, so I'm refactoring a few things here, a few things explode over there and gets a bit painful sometimes.
